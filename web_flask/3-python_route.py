@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-"""
-Starts a Flask web application
-/: display “Hello HBNB!”
-/hbnb: display “HBNB”
-/c/<text>: display “C ”, followed by the value of the text variable 
-/python/(<text>): display “Python ”, followed by the value of the text variable 
+"""Starts a Flask web application.
+The application listens on 0.0.0.0, port 5000.
+Routes:
+    /: Displays 'Hello HBNB!'.
+    /hbnb: Displays 'HBNB'.
+    /c/<text>: Displays 'C' followed by the value of <text>.
+    /python/(<text>): Displays 'Python' followed by the value of <text>.
 """
 from flask import Flask
 
