@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-"""
-Starts Flask web application
-    /: display “Hello HBNB!”
-    /hbnb: display “HBNB”
+"""Starts a Flask web application.
+The application listens on 0.0.0.0, port 5000.
+Routes:
+    /: Displays 'Hello HBNB!'.
+    /hbnb: Displays 'HBNB'.
 """
 from flask import Flask
 
@@ -17,7 +18,7 @@ def hello_hbnb():
 
 @app.route('/hbnb', strict_slashes=False)
 def hbnb():
-    """Displays 'HBNB!'"""
+    """Displays 'HBNB'"""
     return "HBNB"
 
 
